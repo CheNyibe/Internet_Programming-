@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Account</title>
+</head>
+<body>
+	<h1>Create Your Account</h1>
+	<form action="./logon.php" onsubmit="return validateCreateAccountForm();" method="post">
+    Display Name:<br>
+    <input type="text" name="disp_name" placeholder="Display Name" id="disp_name" required>
+    <br>
+    Email Address:<br>
+    <input type="text" name="email" placeholder="Email Address" required >
+    <br>
+    Confirm Email Address:<br>
+    <input type="email" name="email_confirm" placeholder="Confirm Email Address" required>
+    <br>
+    Username:<br>
+    <input type="text" name="username" placeholder="Username" required>
+    <br>
+    Password:<br>
+    <input type="password" name="password" placeholder="Password" required>
+    <br>
+    Confirm Password:<br>
+    <input type="password" name="confirm_pw" placeholder="Confirm Password" required>
+    <br><br>
+    <input type="reset" value="Reset"> &#160;
+    <input type="submit" value="Submit"> &#160;
+    <button id="cancel_create_form">Cancel</button>
+    <input type="hidden" name="action" value="create" />
+   </form>
+</body>
+</html>
